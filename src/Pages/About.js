@@ -9,10 +9,9 @@ export default function About() {
     <>
       <Helmet>
         <title>About — Muhammad Akash Anwar | Energy Audit & ECO4 Compliance Specialist</title>
-        <meta name="description" content="International energy audit professional with expertise in UK compliance frameworks" />
       </Helmet>
 
-      <main className="about-page mb-5">
+      <main className="about-page mb-5 mt-5">
         <div className="container wide">
           <header className="about-header">
             <h1 className="about-title">About Me</h1>
@@ -115,7 +114,7 @@ export default function About() {
           </section>
 
           {/* Leadership vision dark box (heading + paragraph only) */}
-          <section className="leadership mt-5">
+          <section className="leadership mt-5" style={{marginBottom:"80px"}}>
             <div className="lead-card">
               <div className="lead-left">
                 <h4>Leadership Vision</h4>

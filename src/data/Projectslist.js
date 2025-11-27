@@ -12,7 +12,7 @@ export default function ProjectsList({ projects = [], limit = null }) {
 
   return (
     <section className="projects-section py-5">
-      <div className="container">
+      <div className="container mb-5" >
         <div className="projects-header d-flex align-items-center justify-content-between">
           <div>
             <h2 className="projects-title">Featured Projects</h2>

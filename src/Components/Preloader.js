@@ -4,24 +4,42 @@ import "../Styles/phoneinput.css"; // Custom SCSS file
 import { useLocation } from "react-router-dom";
 
 
-const Preloader = ({ duration = 1500 }) => {
+const Preloader = ({ duration = 1500, fadeDuration = 500 }) => {
   const [loading, setLoading] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), duration);
-    return () => clearTimeout(timer);
-  }, [location, duration]); // run on every route change
+    setFadeOut(false);
+
+    // Start fade-out BEFORE removing the preloader
+    const fadeTimer = setTimeout(() => setFadeOut(true), duration);
+
+    // Remove from DOM AFTER fade-out animation finishes
+    const removeTimer = setTimeout(
+      () => setLoading(false),
+      duration + fadeDuration
+    );
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(removeTimer);
+    };
+  }, [location, duration, fadeDuration]);
 
   if (!loading) return null;
 
   return (
-    <div className="preloader">
-      PARAMOUNT GREEN SERVICES
-      {/* <img src="/logo.png" alt="Logo" className="preloader-logo" /> */}
+    <div className={`preloader ${fadeOut ? "fade-out" : ""}`}>
+      <div className="preloader-text">
+        <div className="line ma text-center">MA</div>
+        <div className="line">Muhammad</div>
+        <div className="line">Akash Anwar</div>
+      </div>
     </div>
   );
 };
 
 export default Preloader;
+

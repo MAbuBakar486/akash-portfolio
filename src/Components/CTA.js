@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AkashCV from "../assets/AkashCV.pdf";
 
 export default function ReadyToCollaborate() {
   return (
@@ -13,12 +14,12 @@ export default function ReadyToCollaborate() {
           </p>
 
           <div className="cta-buttons">
-            <Link to="/contact" className="cta-btn teal-button">
+            <Link to="/contactme" className="cta-btn teal-button">
               Contact Me <span className="arrow">→</span>
             </Link>
 
             <a
-              href="/your-cv.pdf"
+              href={AkashCV}
               download
               className="cta-btn outline-button"
             >

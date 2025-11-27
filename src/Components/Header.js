@@ -1,22 +1,68 @@
-
-// const heroImage = 'https://thumbs.dreamstime.com/b/initial-letter-ma-logotype-company-name-colored-orange-grey-swoosh-star-design-vector-logo-business-identity-203970029.jpg';
-
-import React from 'react';
+import React, { useState } from "react";
+import "../Styles/header.css";
+import { Link, NavLink } from "react-router-dom";
+import AkashCV from "../assets/AkashCV.pdf";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
+  const closeMenu = () => setOpen(false);
+
   return (
     <header className="site-header">
-      <div className="container d-flex justify-content-between align-items-center py-3">
-        <div className="brand">MA</div>
-        <nav>
-          <ul className="nav">
-            <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-            <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
-            <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
-            <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+      <div className="container header-container">
+        <div className="brand">
+          <Link to="/" onClick={closeMenu}>MA</Link>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button
+          className={`menu-toggle ${open ? "open" : ""}`}
+          onClick={() => setOpen((s) => !s)}
+          aria-label="Toggle Menu"
+          aria-expanded={open}
+        >
+          <span className="bar" />
+          <span className="bar" />
+          <span className="bar" />
+        </button>
+
+        {/* Navigation */}
+        <nav className={open ? "nav-menu open" : "nav-menu"}>
+          <ul>
+            <li>
+              <NavLink to="/" end className="nav-link" onClick={closeMenu}>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" className="nav-link" onClick={closeMenu}>
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/projects" className="nav-link" onClick={closeMenu}>
+                Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contactme" className="nav-link" onClick={closeMenu}>
+                Contact
+              </NavLink>
+            </li>
           </ul>
+
+          {/* If CV is in public folder: /akash-cv.pdf */}
+          <a
+            className="btn-teal"
+            href={AkashCV}
+            download
+            onClick={closeMenu}
+            rel="noopener noreferrer"
+          >
+            <i className="ri-download-line" /> Download CV
+          </a>
         </nav>
-        <a className="btn btn-teal" href="#">Download CV</a>
       </div>
     </header>
   );

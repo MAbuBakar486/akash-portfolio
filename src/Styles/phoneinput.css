@@ -1,34 +1,3 @@
-/* phoneinput.css */
-
-/* Scope only inside login form */
-.login__form .react-tel-input {
-  width: 100% !important;
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-.login__form .react-tel-input .form-control {
-  width: 100% !important;
-  border-radius: 8px !important;
-  padding: 12px 12px 12px 50px !important;
-  border: 1px solid #ddd !important;
-  background: #f9f9f9 !important;
-  font-size: 0.95rem !important;
-  box-shadow: none !important;
-}
-
-.login__form .react-tel-input .flag-dropdown {
-  border: 1px solid #ddd !important;
-  border-radius: 8px 0 0 8px !important;
-  background: #fff !important;
-}
-
-/* Ensure dropdown does not break modal */
-.login__form .react-tel-input .country-list {
-  z-index: 10000 !important;
-}
-
-
 .glow-button {
 background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
   /* background: linear-gradient(135deg, #ffffff, #f1f1f1);  */
@@ -65,46 +34,60 @@ background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 } */
+/* BACKDROP */
 .preloader {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff; /* website background */
+  inset: 0;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99999;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #795a5a; /* fallback text color */
-  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
-.preloader::before {
-  content: "MADANI MARRIAGE"; /* same text */
-  position: absolute;
-  background: linear-gradient(
-    to left,
-    #7c0c0c 25%,
-    #e0e0e0 50%,
-    #90c205 75%
-  );
-  background-size: 200% 100%;
+/* FADE OUT CLASS */
+.preloader.fade-out {
+  opacity: 0;
+}
+
+/.preloader-text {
+  text-align: center;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MA line (strong, premium) */
+.line.ma {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #8b008b, #00a2ff, #00c96f, #8b008b);
+  background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shimmer 2.5s infinite linear;
-  font-size: 2rem;
-  font-weight: bold;
+  animation: glow 2.5s linear infinite;
+  margin-bottom: 6px;
 }
 
-@keyframes shimmer {
-  0% {
-    background-position:  200% 0;
-  }
-  100% {
-    background-position: 0 -200%;
-  }
+/* Full name lines (elegant + readable) */
+.line {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  background: linear-gradient(90deg, #8b008b, #00a2ff, #00c96f, #8b008b);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2.5s linear infinite;
 }
 
+/* Glow animation */
+@keyframes glow {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

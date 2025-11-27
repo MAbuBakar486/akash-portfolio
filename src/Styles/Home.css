@@ -96,6 +96,69 @@
   padding-top: 6px;
 }
 
+/* ---------- Portrait image frame (keeps 731x820 look) ---------- */
+/* Use aspect-ratio to preserve portrait ratio and let img cover inside */
+.hero-image-frame {
+  width: 100%;
+  max-width: 420px;               /* desktop default frame width */
+  aspect-ratio: 731 / 820;        /* keeps the portrait shape (width / height) */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(2,6,23,0.08);
+  border: 1px solid rgba(2,6,23,0.06);
+  background: #fff;
+  display: block;
+}
+
+/* image: fill the frame, keep center focus, no distortion */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* crops while preserving aspect ratio */
+  object-position: center center; /* keep subject centered */
+  display: block;
+  -webkit-user-drag: none;
+}
+
+/* ---------- Responsive tuning ---------- */
+
+/* Large screens: show a slightly bigger framed photo */
+@media (min-width: 1200px) {
+  .hero-image-frame {
+    max-width: 520px;    /* same value you already used on desktop if you like */
+  }
+}
+
+/* Medium screens: reduce width to fit column comfortably */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .hero-image-frame {
+    max-width: 420px;
+  }
+}
+
+/* Small screens: make the portrait smaller and centered with margin */
+@media (max-width: 767.98px) {
+  .hero-image-frame {
+    max-width: 320px;
+    aspect-ratio: 731 / 820;
+    margin: 0 auto;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+}
+
+/* Optional subtle hover effect on desktop */
+@media (hover: hover) and (pointer: fine) {
+  .hero-image-frame:hover {
+    transform: translateY(-6px);
+    transition: transform 220ms ease;
+    box-shadow: 0 28px 56px rgba(2,6,23,0.10);
+  }
+}
+
+
 /* stack buttons full-width on very small viewports */
 @media (max-width: 575.98px) {
   .hero-left {

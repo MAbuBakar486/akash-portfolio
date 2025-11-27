@@ -6,6 +6,7 @@
   color: #374151;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 10px;
 }
 
 /* WIDER container so left/right whitespace matches design */
@@ -153,6 +154,7 @@
   background: #0f172a;
   color: #e6eef2;
   border-radius: 14px;
+  margin-bottom: 20px;
   padding: 30px;
   display: flex;
   gap: 24px;

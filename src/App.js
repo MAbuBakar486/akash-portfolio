@@ -17,7 +17,7 @@ function App() {
     <HelmetProvider>
       <div id="app-container">
         <Navbar />
-        {/* <Preloader duration={4700} /> */}
+        <Preloader duration={2000} />
 
         <SmoothScrollWrapper>
         <div className="main-content">
