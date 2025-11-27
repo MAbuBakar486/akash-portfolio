@@ -8,7 +8,6 @@ import '../src/App.css';
 import SmoothScrollWrapper from "./Components/SmoothScrollWrapper.js";
 import WhatsAppButton from './Components/Whatsapp.js';
 import ResetPage from '../src/Widgets/ResetPage.js';
-// import { HashRouter ,Route, Routes } from 'react-router-dom';
 
 import AppRoutes from "./routes.js";
 

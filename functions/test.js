@@ -1,4 +1,3 @@
-// testWrite.js
 const admin = require("firebase-admin");
 admin.initializeApp({
   credential: admin.credential.applicationDefault(), // run in environment with gcloud auth OR use serviceAccount

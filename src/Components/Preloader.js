@@ -1,6 +1,5 @@
-// Preloader.js
 import React, { useEffect, useState } from "react";
-import "../Styles/phoneinput.css"; // Custom SCSS file
+import "../Styles/phoneinput.css"; 
 import { useLocation } from "react-router-dom";
 
 
