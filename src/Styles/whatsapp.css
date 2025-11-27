@@ -1,3 +1,4 @@
+/* Base (desktop & large screens): NO glow */
 .wa-button {
   position: fixed;
   right: 20px;
@@ -16,6 +17,8 @@
   transition: background 0.25s ease;
   z-index: 9999;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  writing-mode: vertical-rl; /* Make it vertical */
+  animation: none; /* <- important: no glow on large screens */
 }
 
 .wa-button:hover {
@@ -27,6 +30,7 @@
   line-height: 1;
 }
 
+/* Small screens: hide text, round icon button, ENABLE glow */
 @media (max-width: 768px) {
   .wa-text { display: none; }
 
@@ -34,9 +38,11 @@
     padding: 12px;
     border-radius: 50%;
     box-shadow: none;
+    animation: glowing 0.9s infinite alternate; /* glow only on small screens */
   }
 }
 
+/* Glow animation (green aura) */
 @keyframes glowing {
   0% {
     box-shadow: 0 0 6px #25d366, 0 0 12px #25d366, 0 0 18px #25d366;
@@ -45,5 +51,3 @@
     box-shadow: 0 0 18px #25d366, 0 0 32px #25d366, 0 0 48px #25d366;
   }
 }
-
-

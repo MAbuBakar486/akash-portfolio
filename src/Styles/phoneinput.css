@@ -7,7 +7,7 @@
   animation: glowing 2s infinite alternate;
 }
 
-
+.preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -44,7 +44,7 @@
   opacity: 0;
 }
 
-/.preloader-text {
+.preloader-text {
   text-align: center;
   letter-spacing: 1px;
   display: flex;

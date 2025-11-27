@@ -2,7 +2,7 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 const nodemailer = require("nodemailer");
-const { defineSecret } = require("firebase-functions/params"); // works with firebase-functions v4+
+const { defineSecret } = require("firebase-functions/params"); 
 
 admin.initializeApp();
 
@@ -19,7 +19,6 @@ exports.akashcontacts = functions
   .document("akashweb-contact/{docId}")
   .onCreate(async (snap, context) => {
     const data = snap.data() || {};
-    // Access secret values at runtime (inside the handler)
     const user = GMAIL_USER.value();
     const pass = GMAIL_PASS.value();
 
@@ -52,7 +51,7 @@ exports.akashcontacts = functions
       <!-- Header -->
       <div style="background:linear-gradient(135deg, #6a11cb, #2575fc); color:#fff; padding:20px; text-align:center;">
         <h2 style="margin:0; font-size:20px;">📩 New Contact Form Submission</h2>
-        <p style="margin:5px 0 0; font-size:14px;">You have a new message from <a href="https://makashanwar.vercel.app/contactme/" style="text-decoration: none; color: white;">Contact Form || PGS</a></p>
+        <p style="margin:5px 0 0; font-size:14px;">You have a new message from <a href="https://makashanwar.vercel.app/contactme" style="text-decoration: none; color: white;">Contact Form || PGS</a></p>
       </div>
 
       <!-- Notice -->
@@ -101,7 +100,7 @@ exports.akashcontacts = functions
       <!-- Footer -->
       <div style="background:#1a1a1a; color:#ccc; text-align:center; font-size:12px; padding:15px;">
         This is an automated notification from 
-        <a href="https://makashanwar.vercel.app/" style="text-decoration: none; color: white;">Akash Anwar</a><br>
+        <a href="https://makashanwar.vercel.app" style="text-decoration: none; color: white;">Akash Anwar</a><br>
         © 2025 - All rights reserved.
       </div>
       
