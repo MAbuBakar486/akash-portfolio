@@ -13,7 +13,6 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
-/* Dark Blue button */
 .dark-btn {
   background: #0f172a;
   color: #ffffff;
@@ -24,7 +23,6 @@
   transform: translateY(-2px);
 }
 
-/* Teal button */
 .teal-btn {
   background: #06b6d4;
   color: #ffffff;
@@ -35,7 +33,6 @@
   transform: translateY(-2px);
 }
 
-/* Arrow */
 .hero-btn .arrow {
   margin-left: 10px;
   font-size: 16px;
@@ -47,14 +44,11 @@
   transform: translateX(4px);
 }
 
-/* ---------- Hero responsive rules ---------- */
 
 .hero-left {
-  max-width: 720px;        /* desktop baseline */
   width: 100%;
 }
 
-/* tag */
 .hero-left .tag {
   display: inline-block;
   margin-bottom: 0.75rem;
@@ -67,7 +61,6 @@
   letter-spacing: 0.2px;
 }
 
-/* responsive H1: scales smoothly between mobile and desktop */
 .hero-title {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 700;
@@ -75,28 +68,23 @@
   margin-bottom: 0.6rem;
   color: #0f172a;
   line-height: 1.02;
-  /* clamp(min, preferred, max) — tweak values to taste */
   font-size: clamp(2rem, 6.5vw, 4rem);
   word-break: keep-all;
   letter-spacing: -0.5px;
 }
 
-/* paragraph scales and limits width on large screens */
 .hero-sub {
-  color: #6b7280; /* bootstrap text-muted hex */
   font-size: clamp(0.98rem, 2.2vw, 1.125rem);
   line-height: 1.6;
   margin-bottom: 1rem;
   max-width: 680px;
 }
 
-/* Buttons block: center on small screens */
 .hero-buttons {
   align-items: center;
   padding-top: 6px;
 }
 
-/* ---------- Portrait image frame (keeps 731x820 look) ---------- */
 .hero-image-frame {
   width: 100%;
   max-width: 420px;          
@@ -109,7 +97,6 @@
   display: block;
 }
 
-/* image: fill the frame, keep center focus, no distortion */
 .hero-image {
   width: 100%;
   height: 100%;
@@ -119,7 +106,6 @@
   -webkit-user-drag: none;
 }
 
-/* ---------- Responsive tuning ---------- */
 
 
 @media (min-width: 1200px) {
@@ -148,7 +134,6 @@
   }
 }
 
-/* Optional subtle hover effect on desktop */
 @media (hover: hover) and (pointer: fine) {
   .hero-image-frame:hover {
     transform: translateY(-6px);
@@ -158,7 +143,6 @@
 }
 
 
-/* stack buttons full-width on very small viewports */
 @media (max-width: 575.98px) {
   .hero-left {
     text-align: center;
@@ -184,7 +168,6 @@
   }
 }
 
-/* tablet tweaks */
 @media (min-width: 576px) and (max-width: 991.98px) {
   .hero-left {
     padding-right: 0; 
@@ -200,7 +183,6 @@
 }
 
 @media (max-width: 991.98px) {
-  /* stack if needed and add breathing room */
   .hero-left {
     margin-bottom: 1.5rem;
   }
@@ -208,18 +190,14 @@
 
 
 
-/* -------------------------  Stats Row CSS  ----------------------------------------- */
-/* ---------- Stats row styles ---------- */
 
 .stats-section {
-  background: #fbfdfe; /* subtle off-white */
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
   position: relative;
   overflow: visible;
 }
 
-/* optional decorative image shown on large screens only */
 .stats-deco {
   position: absolute;
   right: 3%;
@@ -233,16 +211,13 @@
   display: block;
 }
 
-/* grid layout */
 .stats-grid {
   display: grid;
   gap: 1.25rem;
-  /* 4 cols on large screens */
   grid-template-columns: repeat(4, 1fr);
   align-items: stretch;
 }
 
-/* stat card */
 .stat-card {
   background: #ffffff;
   border-radius: 12px;
@@ -251,7 +226,6 @@
   transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms, border-color 220ms;
   cursor: default;
 
-  border: 2px solid rgba(161, 121, 92, 0.18); /* soft brown */
   box-shadow: 0 6px 18px rgba(2,6,23,0.04);
   min-height: 100px;
   display: flex;
@@ -261,46 +235,36 @@
   outline: none;
 }
 
-/* keyboard focus for accessibility */
 .stat-card:focus {
   box-shadow: 0 8px 26px rgba(2,6,23,0.08);
   transform: translateY(-4px);
   border-color: rgba(6,182,212,0.28);
 }
 
-/* hover active state: teal accent */
 .stat-card:hover,
 .stat-card:focus,
 .stat-card.active {
   transform: translateY(-6px);
-  border-color: rgba(6,182,212,0.95); /* teal */
   box-shadow: 0 18px 40px rgba(2,6,23,0.08);
 }
 
-/* big stat value */
 .stat-value {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   font-weight: 800;
-  color: #06b6d4; /* teal by default to match active accent in sample */
   font-size: 1.6rem;
   letter-spacing: -0.6px;
 }
 
-/* label text */
 .stat-label {
-  color: #6b7280; /* muted gray */
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-/* when not hovered, make value and border warmer slightly */
 .stat-card:not(.active) .stat-value {
-  color: #17809a; /* slightly muted teal so brown border still reads */
 }
 
 
 
-/* Responsive breakpoints */
 @media (max-width: 991.98px) {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -325,8 +289,6 @@
 }
 
 
-/* -------------------------  CoreExpertise CSS  ----------------------------------------- */
-/* Section titles */
 .expertise-title {
   font-family: "Playfair Display", Georgia, serif;
   font-size: 2.2rem;
@@ -340,32 +302,26 @@
   line-height: 1.6;
 }
 
-/* Grid layout */
 .expertise-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
 
-/* Card */
 .expertise-card {
   background: #ffffff;
   padding: 28px;
   border-radius: 14px;
   text-align: left;
-  border: 2px solid transparent;   /* ← default: NO BORDER visible */
   transition: all 0.25s ease;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
 }
 
-/* Hover: show border & lift card */
 .expertise-card:hover {
-  border-color: #06b6d4; /* teal border only on hover */
   transform: translateY(-6px);
   box-shadow: 0 16px 36px rgba(2, 6, 23, 0.08);
 }
 
-/* Icon container */
 .expertise-icon-box {
   width: 56px;
   height: 56px;
@@ -378,13 +334,10 @@
 }
 
 .expertise-icon {
-  font-size: 26px;     /* icon size */
-  color: #0f766e;       /* teal icon */
   opacity: 0.95;
 }
 
 
-/* Card title */
 .expertise-card-title {
   font-weight: 700;
   color: #0f172a;
@@ -392,14 +345,12 @@
   margin-bottom: 8px;
 }
 
-/* Card text */
 .expertise-card-text {
   color: #64748b;
   font-size: 0.97rem;
   line-height: 1.55;
 }
 
-/* Responsive */
 @media (max-width: 991.98px) {
   .expertise-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -413,17 +364,13 @@
 }
 
 
-/* -------------------------  Projects CSS  ----------------------------------------- */
 
 
 
-/* -------------------------  CTA CSS  ----------------------------------------- */
-/* CTA Section Wrapper */
 .cta-wrapper {
   padding: 60px 0;
 }
 
-/* Dark box */
 .cta-box {
   background: #0f172a;
   padding: 50px 40px;
@@ -432,7 +379,6 @@
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
 }
 
-/* Title */
 .cta-title {
   color: #ffffff;
   font-family: "Playfair Display", serif;
@@ -441,7 +387,6 @@
   margin-bottom: 12px;
 }
 
-/* Subtitle */
 .cta-text {
   color: #d1d5db;
   font-size: 1.05rem;
@@ -450,7 +395,6 @@
   line-height: 1.6;
 }
 
-/* Button Row */
 .cta-buttons {
   display: flex;
   justify-content: center;
@@ -458,7 +402,6 @@
   flex-wrap: wrap;
 }
 
-/* Shared button style */
 .cta-btn {
   padding: 12px 24px;
   border-radius: 12px;
@@ -471,7 +414,6 @@
   transition: all 0.25s ease;
 }
 
-/* Teal Filled Button */
 .teal-button {
   background: #06b6d4;
   color: white;
@@ -481,7 +423,6 @@
   transform: translateY(-3px);
 }
 
-/* Arrow animation */
 .cta-btn .arrow {
   transition: transform 0.2s ease;
 }
@@ -489,7 +430,6 @@
   transform: translateX(4px);
 }
 
-/* Outline Button */
 .outline-button {
   border: 2px solid #4b5563;
   color: #e5e7eb;
@@ -500,3 +440,5 @@
   color: #06b6d4;
   transform: translateY(-3px);
 }
+
+

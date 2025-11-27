@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,7 +38,6 @@
 
 
 
-/* <============================= CSS for Scrolling =========================================> */
 .scroll-to-top {
   position: fixed;
   bottom: 55px;
@@ -97,22 +95,17 @@
 }
 
 
-/* <============================= CSS for FAQ's =========================================> */
-/* Style for question box */
 .accordion-button {
   border: 1px solid red;
   font-weight: 500;
   color: black;
 }
 
-/* Active question */
 .accordion-button:not(.collapsed) {
-  background-color: #f87171; /* red-400 */
   color: white;
   box-shadow: none;
 }
 
-/* Answer box */
 .accordion-body {
   border: 1px solid red;
   border-top: none;
@@ -120,7 +113,8 @@
   color: #333;
 }
 
-/* Remove default shadow */
 .accordion-item {
   border: none !important;
 }
+
+

@@ -151,7 +151,6 @@
   color: #888;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -219,3 +218,5 @@
   font-size: 0.8rem;
   color: #D1BFA3;
 }
+
+

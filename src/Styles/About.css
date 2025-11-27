@@ -1,6 +1,4 @@
-/* ========== About page styles (full) ========== */
 
-/* Fonts: make sure index.html preloads Playfair Display + Poppins */
 .about-page, .about-page p, .info-body, .competencies-body {
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   color: #374151;
@@ -9,7 +7,6 @@
   padding-bottom: 10px;
 }
 
-/* WIDER container so leftright whitespace matches design */
 .container.wide {
   max-width: 1180px;
   padding-left: 36px;
@@ -17,7 +14,6 @@
   margin: 0 auto;
 }
 
-/* Header title */
 .about-header { padding-top: 40px; padding-bottom: 18px; }
 .about-title {
   font-family: "Playfair Display", serif;
@@ -32,7 +28,6 @@
   font-size: 1.05rem;
 }
 
-/* Intro paragraphs more readable and narrower */
 .about-intro p {
   color: #374151;
   line-height: 1.8;
@@ -40,13 +35,10 @@
   max-width: 950px;
 }
 
-/* === Top cards (equal-height) === */
 .about-cards.row.align-items-stretch { align-items: stretch; }
 
-/* Ensure columns become flex containers so children can stretch */
 .about-cards .col-md-6.d-flex { display: flex; }
 
-/* Card base */
 .info-card.roomy {
   display: flex;
   flex-direction: column;
@@ -58,16 +50,13 @@
   border: 2px solid rgba(15,23,42,0.04);
   box-shadow: 0 8px 26px rgba(2,6,23,0.04);
   transition: transform .22s ease, box-shadow .22s ease;
-  min-height: 0; /* allow flex children to shrink properly */
 }
 
-/* Hover lift */
 .info-card.roomy:hover {
   transform: translateY(-6px);
   box-shadow: 0 24px 46px rgba(2,6,23,0.06);
 }
 
-/* Icon box */
 .info-icon {
   width: 68px;
   height: 68px;
@@ -80,15 +69,12 @@
 }
 .info-icon i { font-size: 24px; color: #0f766e; }
 
-/* Info body expands to fill card so both cards have equal height */
 .info-body {
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;  /* important for equal height cards */
   min-height: 0;
 }
 
-/* spacing for the content inside */
 .info-title {
   font-size: 1.02rem;
   font-weight: 700;
@@ -108,7 +94,6 @@
 }
 .info-item { margin-bottom: 14px; }
 
-/* === Competencies card (full width, matches visuals) === */
 .competencies-card.roomy {
   display: flex;
   gap: 20px;
@@ -149,7 +134,6 @@
 .competencies-grid li { margin-bottom: 10px; color: #475569; line-height: 1.6; }
 .competencies-grid li::before { content: "•"; color: #06b6d4; margin-right: 8px; }
 
-/* === Leadership dark box: heading + paragraph only (no action buttons) === */
 .lead-card {
   background: #0f172a;
   color: #e6eef2;
@@ -165,11 +149,9 @@
 .lead-left h4 { font-size: 1.15rem; margin-bottom: 12px; color: #ffffff; font-weight:700; }
 .lead-left p { color: rgba(229,231,235,0.95); line-height:1.7; margin:0; }
 
-/* decorative media */
 .lead-media img { max-width: 160px; display:block; opacity:0.9; }
 
 
-/* === Responsive behavior === */
 @media (max-width: 991.98px) {
   .container.wide { padding-left: 24px; padding-right: 24px; max-width: 920px; }
   .info-card.roomy, .competencies-card.roomy, .lead-card { flex-direction: column; align-items: stretch; }
@@ -186,3 +168,5 @@
   .lead-card { padding:18px; border-radius:12px; }
   .about-intro p { font-size: 0.95rem; }
 }
+
+

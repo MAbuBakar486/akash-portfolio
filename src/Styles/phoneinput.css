@@ -1,7 +1,4 @@
 .glow-button {
-background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
-  /* background: linear-gradient(135deg, #ffffff, #f1f1f1);  */
-  color: #B22222 !important; /* Deep red text */
   padding: 8px 18px;
   border-radius: 8px;
   font-weight: bold;
@@ -11,8 +8,6 @@ background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
 }
 
 
-/* Preloader CSS for image*/
-/* .preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +21,6 @@ background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
 }
 
 .preloader-logo {
-  width: 120px; /* adjust size 
   animation: blink 1s infinite;
 }
 
@@ -34,7 +28,6 @@ background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 } */
-/* BACKDROP */
 .preloader {
   position: fixed;
   inset: 0;
@@ -47,7 +40,6 @@ background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
   transition: opacity 0.5s ease;
 }
 
-/* FADE OUT CLASS */
 .preloader.fade-out {
   opacity: 0;
 }
@@ -60,7 +52,6 @@ background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
   align-items: center;
 }
 
-/* MA line (strong, premium) */
 .line.ma {
   font-family: "Montserrat", sans-serif;
   font-size: 80px;
@@ -73,7 +64,6 @@ background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
   margin-bottom: 6px;
 }
 
-/* Full name lines (elegant + readable) */
 .line {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -86,8 +76,9 @@ background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
   animation: glow 2.5s linear infinite;
 }
 
-/* Glow animation */
 @keyframes glow {
   0% { background-position: 200% 0; }
   100% { background-position: -200% 0; }
 }
+
+

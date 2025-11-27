@@ -32,13 +32,11 @@
   transition: transform .25s ease, opacity .2s ease;
 }
 
-/* nav layout*/
 .nav-menu { display:flex; align-items:center; gap:24px; }
 .nav-menu ul { display:flex; gap:20px; margin:0; padding:0; list-style:none; }
 .nav-link { text-decoration:none; color:#444; font-weight:800; }
 .nav-link.active { color:#0099aa; }
 
-/* CTA */
 .btn-teal {
   background:#00c2d3;
   color:#fff;
@@ -48,7 +46,6 @@
   font-weight:600;
 }
 
-/* mobile */
 @media (max-width: 768px) {
   .menu-toggle { display:block; }
   .nav-menu {
@@ -68,3 +65,5 @@
   .nav-menu ul { flex-direction: column; gap:12px; }
   .btn-teal { display:block; margin-top:12px; text-align:center; }
 }
+
+

@@ -44,7 +44,6 @@ iframe {
   color: #fff;
 }
 
-/* WhatsApp Call-to-Action full width */
 .whatsapp-cta {
   margin: 0px 20px 0px 20px;
   background: #0C3A2E;
@@ -64,13 +63,11 @@ iframe {
 
 
 
-/* ------ Expertise Section Container ------ */
 .expertise-section .container {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* ------ Expertise Card ------ */
 .expertise-card {
   background: #f9fafb;
   border: 2px solid #e5e7eb;
@@ -86,7 +83,6 @@ iframe {
   margin-bottom: 22px;
 }
 
-/* ------ Expertise Grid (2 columns) ------ */
 .expertise-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -106,7 +102,6 @@ iframe {
   margin: 0;
 }
 
-/* ------ CTA Buttons Row ------ */
 .expertise-cta {
   display: flex;
   gap: 16px;
@@ -114,7 +109,6 @@ iframe {
   justify-content: center;
 }
 
-/* Base Button */
 .cta-btn {
   padding: 14px 28px;
   border-radius: 10px;
@@ -127,7 +121,6 @@ iframe {
   transition: all 0.25s ease;
 }
 
-/* Dark Button */
 .dark-btn {
   background: #0f172a;
   color: #ffffff;
@@ -137,7 +130,6 @@ iframe {
   transform: translateY(-3px);
 }
 
-/* Teal Button */
 .teal-btn {
   background: #06b6d4;
   color: #ffffff;
@@ -147,14 +139,14 @@ iframe {
   transform: translateY(-3px);
 }
 
-/* Icons */
 .cta-btn i {
   font-size: 1.1rem;
 }
 
-/* ------ Responsive ------ */
 @media (max-width: 768px) {
   .expertise-grid {
     grid-template-columns: 1fr;
   }
 }
+
+
