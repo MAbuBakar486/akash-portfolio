@@ -250,7 +250,6 @@
   text-align: center;
   transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms, border-color 220ms;
   cursor: default;
-  /* default warm/brown-ish border */
   border: 2px solid rgba(161, 121, 92, 0.18); /* soft brown */
   box-shadow: 0 6px 18px rgba(2,6,23,0.04);
   min-height: 100px;
