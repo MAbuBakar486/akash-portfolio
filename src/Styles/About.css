@@ -9,7 +9,7 @@
   padding-bottom: 10px;
 }
 
-/* WIDER container so left/right whitespace matches design */
+/* WIDER container so leftright whitespace matches design */
 .container.wide {
   max-width: 1180px;
   padding-left: 36px;
@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-/* Header / title */
+/* Header title */
 .about-header { padding-top: 40px; padding-bottom: 18px; }
 .about-title {
   font-family: "Playfair Display", serif;
@@ -168,8 +168,6 @@
 /* decorative media */
 .lead-media img { max-width: 160px; display:block; opacity:0.9; }
 
-/* === Visual tweaks and micro polish === */
-.projected-gutter-fix { /* optional helper class if needed */ }
 
 /* === Responsive behavior === */
 @media (max-width: 991.98px) {

@@ -97,11 +97,10 @@
 }
 
 /* ---------- Portrait image frame (keeps 731x820 look) ---------- */
-/* Use aspect-ratio to preserve portrait ratio and let img cover inside */
 .hero-image-frame {
   width: 100%;
-  max-width: 420px;               /* desktop default frame width */
-  aspect-ratio: 731 / 820;        /* keeps the portrait shape (width / height) */
+  max-width: 420px;          
+  aspect-ratio: 731 / 820;        
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(2,6,23,0.08);
@@ -114,29 +113,29 @@
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* crops while preserving aspect ratio */
-  object-position: center center; /* keep subject centered */
+  object-fit: cover;     
+  object-position: center center; 
   display: block;
   -webkit-user-drag: none;
 }
 
 /* ---------- Responsive tuning ---------- */
 
-/* Large screens: show a slightly bigger framed photo */
+
 @media (min-width: 1200px) {
   .hero-image-frame {
-    max-width: 520px;    /* same value you already used on desktop if you like */
+    max-width: 520px;   
   }
 }
 
-/* Medium screens: reduce width to fit column comfortably */
+
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .hero-image-frame {
     max-width: 420px;
   }
 }
 
-/* Small screens: make the portrait smaller and centered with margin */
+
 @media (max-width: 767.98px) {
   .hero-image-frame {
     max-width: 320px;
@@ -171,11 +170,10 @@
 
   .hero-buttons .hero-btn {
     width: 100%;
-    max-width: 320px; /* prevents extreme wide on tiny phones */
+    max-width: 320px; 
   }
 
   .hero-title {
-    /* slightly tighter on tiny phones */
     font-size: clamp(1.8rem, 9.5vw, 2.6rem);
   }
 
@@ -189,7 +187,7 @@
 /* tablet tweaks */
 @media (min-width: 576px) and (max-width: 991.98px) {
   .hero-left {
-    padding-right: 0; /* let columns handle spacing */
+    padding-right: 0; 
   }
 
   .hero-title {
@@ -201,7 +199,6 @@
   }
 }
 
-/* keep image and column alignment intact */
 @media (max-width: 991.98px) {
   /* stack if needed and add breathing room */
   .hero-left {
