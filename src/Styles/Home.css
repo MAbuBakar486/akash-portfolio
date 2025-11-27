@@ -323,8 +323,7 @@
 }
 
 
-/* -------------------------  CoreExpertise CSS  ----------------------------------------- */
-/* Section titles */
+
 .expertise-title {
   font-family: "Playfair Display", Georgia, serif;
   font-size: 2.2rem;
@@ -338,32 +337,32 @@
   line-height: 1.6;
 }
 
-/* Grid layout */
+
 .expertise-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
 
-/* Card */
+
 .expertise-card {
   background: #ffffff;
   padding: 28px;
   border-radius: 14px;
   text-align: left;
-  border: 2px solid transparent;   /* ← default: NO BORDER visible */
+  border: 2px solid transparent;   
   transition: all 0.25s ease;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
 }
 
-/* Hover: show border & lift card */
+
 .expertise-card:hover {
-  border-color: #06b6d4; /* teal border only on hover */
+  border-color: #06b6d4; 
   transform: translateY(-6px);
   box-shadow: 0 16px 36px rgba(2, 6, 23, 0.08);
 }
 
-/* Icon container */
+
 .expertise-icon-box {
   width: 56px;
   height: 56px;
@@ -376,13 +375,12 @@
 }
 
 .expertise-icon {
-  font-size: 26px;     /* icon size */
-  color: #0f766e;       /* teal icon */
+  font-size: 26px;    
+  color: #0f766e;       
   opacity: 0.95;
 }
 
 
-/* Card title */
 .expertise-card-title {
   font-weight: 700;
   color: #0f172a;
@@ -390,14 +388,14 @@
   margin-bottom: 8px;
 }
 
-/* Card text */
+
 .expertise-card-text {
   color: #64748b;
   font-size: 0.97rem;
   line-height: 1.55;
 }
 
-/* Responsive */
+
 @media (max-width: 991.98px) {
   .expertise-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -415,13 +413,12 @@
 
 
 
-/* -------------------------  CTA CSS  ----------------------------------------- */
-/* CTA Section Wrapper */
+
 .cta-wrapper {
   padding: 60px 0;
 }
 
-/* Dark box */
+
 .cta-box {
   background: #0f172a;
   padding: 50px 40px;
@@ -430,7 +427,7 @@
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
 }
 
-/* Title */
+
 .cta-title {
   color: #ffffff;
   font-family: "Playfair Display", serif;
@@ -439,7 +436,7 @@
   margin-bottom: 12px;
 }
 
-/* Subtitle */
+
 .cta-text {
   color: #d1d5db;
   font-size: 1.05rem;
@@ -448,7 +445,7 @@
   line-height: 1.6;
 }
 
-/* Button Row */
+
 .cta-buttons {
   display: flex;
   justify-content: center;
@@ -456,7 +453,7 @@
   flex-wrap: wrap;
 }
 
-/* Shared button style */
+
 .cta-btn {
   padding: 12px 24px;
   border-radius: 12px;
@@ -469,7 +466,7 @@
   transition: all 0.25s ease;
 }
 
-/* Teal Filled Button */
+
 .teal-button {
   background: #06b6d4;
   color: white;
@@ -479,7 +476,7 @@
   transform: translateY(-3px);
 }
 
-/* Arrow animation */
+
 .cta-btn .arrow {
   transition: transform 0.2s ease;
 }
@@ -487,7 +484,7 @@
   transform: translateX(4px);
 }
 
-/* Outline Button */
+
 .outline-button {
   border: 2px solid #4b5563;
   color: #e5e7eb;
