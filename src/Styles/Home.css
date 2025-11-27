@@ -219,7 +219,7 @@
   overflow: visible;
 }
 
-/* optional decorative image — shown on large screens only */
+/* optional decorative image shown on large screens only */
 .stats-deco {
   position: absolute;
   right: 3%;
@@ -250,6 +250,7 @@
   text-align: center;
   transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms, border-color 220ms;
   cursor: default;
+
   border: 2px solid rgba(161, 121, 92, 0.18); /* soft brown */
   box-shadow: 0 6px 18px rgba(2,6,23,0.04);
   min-height: 100px;
@@ -267,7 +268,7 @@
   border-color: rgba(6,182,212,0.28);
 }
 
-/* hover / active state: teal accent */
+/* hover active state: teal accent */
 .stat-card:hover,
 .stat-card:focus,
 .stat-card.active {
@@ -297,9 +298,7 @@
   color: #17809a; /* slightly muted teal so brown border still reads */
 }
 
-/* If you want brown highlight on not-hover for the value instead:
-   uncomment below and adjust color */
- /* .stat-card:not(.active) .stat-value { color: #a1795b; } */
+
 
 /* Responsive breakpoints */
 @media (max-width: 991.98px) {
