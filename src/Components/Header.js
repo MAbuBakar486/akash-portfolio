@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/header.css";
 import { Link, NavLink } from "react-router-dom";
-import AkashCV from "../assets/AkashCV.pdf";
+import MyCV from "../assets/MyCV.pdf";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -53,7 +53,7 @@ export default function Header() {
 
           <a
             className="btn-teal"
-            href={AkashCV}
+            href={MyCV}
             download
             onClick={closeMenu}
             rel="noopener noreferrer"

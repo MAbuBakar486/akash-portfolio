@@ -7,6 +7,18 @@
   pointer-events: none;
 }
 
+
+::selection {
+  background: #073eb4;    
+  color: #ffffff;         
+}
+
+
+::-moz-selection {
+  background: #073eb4;    
+  color: #ffffff;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

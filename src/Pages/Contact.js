@@ -4,7 +4,7 @@ import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase.js"; // <-- UNCOMMENT / ADD THIS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/Contact.css";
-import AkashCV from "../assets/AkashCV.pdf";
+import MyCV from "../assets/MyCV.pdf";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({

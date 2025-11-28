@@ -8,7 +8,7 @@ import CTA from "../Components/CTA.js";
 import StatsRow from "../Components/StatsRow.js";
 import CoreExpertise from "../Components/CoreExpertise.js";
 import heroimage from "../assets/hero.jpeg";
-import AkashCV from "../assets/AkashCV.pdf";
+import MyCV from "../assets/MyCV.pdf";
 
 
 const Home = () => {
