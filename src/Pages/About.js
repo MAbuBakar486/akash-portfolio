@@ -35,7 +35,6 @@ export default function About() {
             </div>
           </header>
 
-          {/* Two top cards row — equal height */}
           <section className="about-cards row gx-5 gy-4 align-items-stretch">
             <div className="col-md-6 d-flex">
               <div className="info-card roomy d-flex flex-column">
@@ -86,7 +85,6 @@ export default function About() {
             </div>
           </section>
 
-          {/* Core competencies full-width card */}
           <section className="competencies mt-5">
             <div className="competencies-card roomy d-flex">
               <div className="competencies-icon">
@@ -113,7 +111,6 @@ export default function About() {
             </div>
           </section>
 
-          {/* Leadership vision dark box (heading + paragraph only) */}
           <section className="leadership mt-5" style={{marginBottom:"80px"}}>
             <div className="lead-card">
               <div className="lead-left">

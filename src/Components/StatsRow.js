@@ -1,10 +1,4 @@
 import React from "react";
-
-/**
- * Optional: the developer provided a decorative image file.
- * The path below is the local image path supplied earlier.
- * If you don't want the small decorative image, simply remove the img tag.
- */
 const decoImage = "/mnt/data/34e45db0-9977-497b-8c25-5967115e7598.png";
 
 const stats = [
@@ -18,7 +12,6 @@ export default function StatsRow() {
   return (
     <section className="stats-section py-5">
       <div className="container">
-        {/* Optional decorative image (right or hidden on small screens) */}
         <div className="stats-deco">
           <img src={decoImage} alt="decorative" />
         </div>

@@ -42,7 +42,7 @@ const ContactPage = () => {
         phone: formData.phone,
         subject: formData.subject,
         message: formData.message,
-        createdAt: serverTimestamp(), // use server timestamp
+        createdAt: serverTimestamp(), 
       });
 
       alert("Message sent successfully!");
@@ -65,14 +65,9 @@ const ContactPage = () => {
     <>
       <Helmet>
         <title>Contact Me</title>
-        {/* <meta
-          name="description"
-          content="Get in touch with me for bookings, support or custom trip requests. Reach us via phone, email, or our contact form — we're here 24/7."
-        /> */}
       </Helmet>
 
       <div className="contact-page mt-2">
-        {/* header omitted for brevity */}
       <section className="contact-header py-5">
         <div className="container">
           <div className="row align-items-center">
@@ -82,7 +77,6 @@ const ContactPage = () => {
               <p className="lead text-muted">I would love to hear from you.</p>
             </div>
 
-            {/* Right illustration */}
             <div className="col-lg-6 text-center">
               <img
                 src="https://img.freepik.com/premium-vector/video-conference-scene-illustration-people-characters-flat-design-concept_9209-4923.jpg"
@@ -195,7 +189,7 @@ const ContactPage = () => {
                 </form>
               </div>
 
-              {/* right column omitted for brevity */}
+
                           <div className="col-lg-5">
               <div className="info-box p-4 shadow-sm rounded">
                 <h5 className="fw-bold mb-3">Get in touch</h5>
@@ -215,7 +209,6 @@ const ContactPage = () => {
                   <a href="mailto:info@makashanwar.com" className="text-decoration-none text-black">info@makashanwar.com</a>
                 </div>
 
-                {/* Google Map Embed */}
                 <iframe
                   title="office-location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108208.76133292685!2d72.61463248098975!3d32.055078892178535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39217439502694e3%3A0x55e1bad6edcbbc70!2sSargodha%2C%20Pakistan!5e0!3m2!1sen!2s!4v1764080066747!5m2!1sen!2s"

@@ -10,7 +10,7 @@ import CoreExpertise from "../Components/CoreExpertise.js";
 import heroimage from "../assets/hero.jpeg";
 import AkashCV from "../assets/AkashCV.pdf";
 
-// Hero-only Home component — preserves look & feel of your original hero
+
 const Home = () => {
   return (
     <>
@@ -53,18 +53,17 @@ const Home = () => {
               </div>
 
 
-              {/* Right: Image */}
-{/* Right: Image */}
-<div className="col-lg-5 col-md-12 mt-4 mt-lg-0 d-flex justify-content-center">
-  <div className="hero-image-frame">
-    <img
-      src={heroimage}            // your uploaded 731x820 portrait
-      alt="Muhammad Akash Anwar"
-      className="hero-image"
-      loading="eager"
-    />
-  </div>
-</div>
+
+              <div className="col-lg-5 col-md-12 mt-4 mt-lg-0 d-flex justify-content-center">
+                <div className="hero-image-frame">
+                  <img
+                    src={heroimage}
+                    alt="Muhammad Akash Anwar"
+                    className="hero-image"
+                    loading="eager"
+                  />
+                </div>
+              </div>
 
             </div>
           </div>

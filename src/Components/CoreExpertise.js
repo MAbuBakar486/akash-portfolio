@@ -2,17 +2,17 @@ import React from "react";
 
 const items = [
   {
-    icon: "ri-bar-chart-box-line",   // Energy Auditing icon
+    icon: "ri-bar-chart-box-line",   
     title: "Energy Auditing",
     text: "Comprehensive remote property assessments using Solocator and satellite imagery for ECO4 compliance with 98% accuracy"
   },
   {
-    icon: "ri-file-shield-2-line",   // Compliance Documentation icon
+    icon: "ri-file-shield-2-line",   
     title: "Compliance Documentation",
     text: "Standardized GBIS evidence packages and ECO4 submission documentation with 100% compliance success rate"
   },
   {
-    icon: "ri-global-line",          // Remote Coordination icon
+    icon: "ri-global-line",          
     title: "Remote Coordination",
     text: "Cross-border team management between Pakistan and UK operations, reducing project completion time by 40%"
   }

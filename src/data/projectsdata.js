@@ -1,4 +1,4 @@
-// data/projects.js
+
 export const projectsdata = [
   {
     id: "eco4-audit",
@@ -25,7 +25,7 @@ export const projectsdata = [
     ]
   },
 
-  // Add more projects (same shape) if needed for /projects page
+
   {
     id: "retrofit-planning",
     category: "Retrofit Advice",

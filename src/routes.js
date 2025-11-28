@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import Home from './Pages/Home.js';
 import About from './Pages/About.js';
 import ProjectsPage from "./Pages/AllProjects.js";
@@ -13,8 +12,6 @@ const AppRoutes = () => (
     <Route path="/about" element={<About />} />
     <Route path="/projects" element={<ProjectsPage />} />
     <Route path="/contactme" element={<Contact />} />
-
-    {/* Page 404 */}
     <Route path="*" element={<NotFound />} />
   </Routes>
 );

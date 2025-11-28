@@ -7,7 +7,7 @@ const NotFound = () => {
     <div className="notfound-container">
       <div className="notfound-card">
         <img
-          src="https://cdni.iconscout.com/illustration/premium/thumb/search-not-found-11105740-8991397.png" // <-- place your illustration here
+          src="https://cdni.iconscout.com/illustration/premium/thumb/search-not-found-11105740-8991397.png"
           alt="Not Found"
           className="notfound-img"
         />

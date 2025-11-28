@@ -2,11 +2,7 @@ import React from "react";
 import "../Styles/Projects.css";
 import { Link } from "react-router-dom";
 
-/**
- * props:
- *  - projects: array of project objects
- *  - limit: optional number to show only first N projects (used on homepage)
- */
+
 export default function ProjectsList({ projects = [], limit = null }) {
   const items = limit ? projects.slice(0, limit) : projects;
 
