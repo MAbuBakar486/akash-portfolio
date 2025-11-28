@@ -12,10 +12,10 @@ const Preloader = ({ duration = 1500, fadeDuration = 500 }) => {
     setLoading(true);
     setFadeOut(false);
 
-    // Start fade-out BEFORE removing the preloader
+
     const fadeTimer = setTimeout(() => setFadeOut(true), duration);
 
-    // Remove from DOM AFTER fade-out animation finishes
+
     const removeTimer = setTimeout(
       () => setLoading(false),
       duration + fadeDuration

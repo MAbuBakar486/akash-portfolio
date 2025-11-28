@@ -13,19 +13,17 @@ export default function SmoothScrollWrapper({ children }) {
   useEffect(() => {
     if (!wrapperRef.current || !contentRef.current) return;
 
-    // Create ScrollSmoother
     const smoother = ScrollSmoother.create({
       wrapper: wrapperRef.current,
       content: contentRef.current,
-      smooth: 2,        // how “loose” the scroll is
-      effects: true,    // enable data-speed / parallax effects
+      smooth: 2,     
+      effects: true,   
       normalizeScroll: true,
-      // optionally adjust other settings
+
     });
 
-    // Return cleanup
     return () => {
-      smoother.kill();  // destroy the smoother when component unmounts
+      smoother.kill();  
       ScrollTrigger.refresh();
     };
   }, []);

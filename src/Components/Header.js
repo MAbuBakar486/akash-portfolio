@@ -14,8 +14,6 @@ export default function Header() {
         <div className="brand">
           <Link to="/" onClick={closeMenu}>MA</Link>
         </div>
-
-        {/* Mobile Menu Toggle */}
         <button
           className={`menu-toggle ${open ? "open" : ""}`}
           onClick={() => setOpen((s) => !s)}
@@ -27,7 +25,7 @@ export default function Header() {
           <span className="bar" />
         </button>
 
-        {/* Navigation */}
+
         <nav className={open ? "nav-menu open" : "nav-menu"}>
           <ul>
             <li>
@@ -52,7 +50,7 @@ export default function Header() {
             </li>
           </ul>
 
-          {/* If CV is in public folder: /akash-cv.pdf */}
+
           <a
             className="btn-teal"
             href={AkashCV}
